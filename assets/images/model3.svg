@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="100%" height="100%" fill="#04020a"/>
+  <g fill="#00ffe1" opacity="0.16">
+    <rect x="100" y="250" width="600" height="12" rx="6"/>
+    <polygon points="200,250 260,120 320,250"/>
+  </g>
+  <text x="48" y="430" fill="#e9e6ef" font-family="Orbitron, monospace" font-size="36">Retro Palm Tree</text>
+</svg>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sign In — Neon Models</title>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <div class="brand">
+          <div class="logo">NEON MODELS</div>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="marketplace.html">Marketplace</a>
+        </nav>
+      </header>
+
+      <div class="auth-card">
+        <h2 style="margin:0 0 8px 0">Welcome Back</h2>
+        <p style="margin:0 0 18px 0;color:#cfc6e6">Sign in to access purchases and downloads</p>
+        <input id="email" class="input" placeholder="Email or username">
+        <input id="password" class="input" placeholder="Password" type="password">
+        <div style="display:flex;gap:8px;margin-top:14px">
+          <button id="loginBtn" class="btn btn-primary">Sign In</button>
+          <button id="signupToggle" class="btn">Create Account</button>
+        </div>
+
+        <div id="signupForm" style="display:none;margin-top:16px">
+          <input id="su-name" class="input" placeholder="Display name">
+          <input id="su-email" class="input" placeholder="Email">
+          <input id="su-password" class="input" placeholder="Password" type="password">
+          <button id="createBtn" class="btn btn-primary" style="margin-top:8px">Create</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+      document.getElementById('signupToggle').addEventListener('click',()=>{
+        const f=document.getElementById('signupForm'); f.style.display = f.style.display === 'none' ? 'block' : 'none';
+      })
+      document.getElementById('loginBtn').addEventListener('click',()=>{alert('This is a mock login for demo only.')})
+      document.getElementById('createBtn').addEventListener('click',()=>{alert('Account created (mock)')})
+    </script>
+  </body>
+</html>

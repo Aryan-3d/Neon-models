@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="100%" height="100%" fill="#06030a"/>
+  <g fill="#ff2fa6" opacity="0.12">
+    <ellipse cx="400" cy="260" rx="220" ry="90"/>
+    <rect x="340" y="150" rx="36" width="220" height="120"/>
+  </g>
+  <text x="48" y="430" fill="#fff" font-family="Orbitron, monospace" font-size="36">Hover Bike</text>
+</svg>

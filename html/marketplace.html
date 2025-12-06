@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Marketplace — Neon Models</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <div class="brand">
+          <div class="logo">NEON MODELS</div>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="marketplace.html">Marketplace</a>
+          <a href="auth.html">Log In</a>
+        </nav>
+      </header>
+
+      <main>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <h1 style="margin:0">Marketplace</h1>
+          <div style="display:flex;gap:12px;align-items:center">
+            <input id="searchBar" class="input" placeholder="Search models by name...">
+            <button id="clearBtn" class="btn">Clear</button>
+          </div>
+        </div>
+
+        <div class="filters">
+          <select id="categoryFilter" class="filter">
+            <option value="all">All Categories</option>
+          </select>
+          <select id="popFilter" class="filter">
+            <option value="all">Any Popularity</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+          <select id="priceFilter" class="filter">
+            <option value="all">Any Price</option>
+            <option value="0-10">$0 — $10</option>
+            <option value="10-50">$10 — $50</option>
+            <option value="50-9999">$50+</option>
+          </select>
+        </div>
+
+        <section style="margin-top:8px">
+          <div id="marketGrid" class="grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>initMarketplace()</script>
+  </body>
+</html>
